@@ -1,0 +1,12 @@
+************* Module hw2_debugging
+hw2/hw2_debugging.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+hw2/hw2_debugging.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+hw2/hw2_debugging.py:13:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module rand
+hw2/rand.py:4:0: C0301: Line too long (106/100) (line-too-long)
+hw2/rand.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+hw2/rand.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.06/10 (previous run: 4.52/10, +3.55)
+

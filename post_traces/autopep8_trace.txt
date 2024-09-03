@@ -1,0 +1,36 @@
+--- original/hw2/hw2_debugging.py
++++ fixed/hw2/hw2_debugging.py
+@@ -1,7 +1,8 @@
+-#This module implements a merge sort algorithm and related helper functions.
++# This module implements a merge sort algorithm and related helper functions.
+ import rand
+ 
+-def merge_sort(input_arr): #merge sort fxn
++
++def merge_sort(input_arr):  # merge sort fxn
+     if len(input_arr) == 1:
+         return input_arr
+ 
+@@ -10,7 +11,7 @@
+     return recombine(merge_sort(input_arr[:half]), merge_sort(input_arr[half:]))
+ 
+ 
+-def recombine(left_arr, right_arr): #combone method
++def recombine(left_arr, right_arr):  # combone method
+     left_index = 0
+     right_index = 0
+     merge_arr = [None] * (len(left_arr) + len(right_arr))
+--- original/hw2/rand.py
++++ fixed/hw2/rand.py
+@@ -1,7 +1,9 @@
+-#This module provides a function to generate a random array using system commands.
++# This module provides a function to generate a random array using system commands.
+ import subprocess
+ 
+-def random_array(arr): #    Fills an array with random integers generated using the system's shuf command.
++
++# Fills an array with random integers generated using the system's shuf command.
++def random_array(arr):
+     shuffled_num = None
+     for i, _ in enumerate(arr):
+         shuffled_num = subprocess.run(
